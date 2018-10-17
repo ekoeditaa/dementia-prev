@@ -1,6 +1,6 @@
 import React from 'react';
-
 import styles from './EndGame.module.scss';
+import { Link } from 'react-router-dom';
 
 function EndGame() {
   return (
@@ -27,8 +27,12 @@ function EndGame() {
           </div>
         </div>
         <div className={styles['btn-container']}>
-          <button className={styles['endgame-btn']}>Replay</button>
-          <button className={styles['endgame-btn']}>Exit</button>
+          <Link to='/game-guide'>
+            <button className={styles['endgame-btn']}>Replay</button>
+          </Link>
+          <Link to='/home'>
+            <button className={styles['endgame-btn']}>Home</button>
+          </Link>
         </div>
       </div>
     </div>

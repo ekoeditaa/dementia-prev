@@ -67,6 +67,8 @@ $input-color: #D0C8D0;
     border-radius: 20px;
     padding: 25px;
     margin-top: 25px;
+    width: 890px;
+    height: 140px;
 }
 
 @media screen and (max-width: 600px) {
@@ -97,5 +99,7 @@ $input-color: #D0C8D0;
         border-radius: 7px;
         padding: 8px;
         margin-top: 8px;
+        width: 297px;
+        height: 47px;
     }
 }
