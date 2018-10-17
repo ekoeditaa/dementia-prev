@@ -11,15 +11,15 @@ import EndGame from '../EndGame/EndGame';
 function Home() {
   return (
     <div className={styles['home-container']}>
-      <Header />
-      <StartGame title='Choose game' left='Default game' right='Custom game' />
-      <CreateGame />
+      {/* <Header /> */}
+      <StartGame title='Choose game' left='Default game' right='Custom game' startGame={true}/>
+      {/* <CreateGame />
       <Guide desc='Show this to your elderly friend' button='Start' />
       <Choose />
       <MidGame name='Mr. John' progress='60' realGame={true} />
       <MidGame name='Ms. Smith' realGame={false} />
       <MidGame name='Ms. Smith' realGame={false} first={true}/>
-      <EndGame />
+      <EndGame /> */}
     </div>
   )
 }

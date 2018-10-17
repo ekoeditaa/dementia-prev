@@ -1,9 +1,14 @@
 import React from 'react';
 
 import styles from './Guide.module.scss';
+import style from '../Home/Home.module.scss';
+
+import Header from '../../Header/Header';
 
 function Guide(props) {
   return (
+    <div className={style['home-container']}>
+    <Header />
     <div className={styles['guide']}>
       <div>
         <div className={styles['guide-container']}>
@@ -15,6 +20,7 @@ function Guide(props) {
           {props.button}
       </button>
       </div>
+    </div>
     </div>
   )
 }
