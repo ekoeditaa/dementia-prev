@@ -11,31 +11,31 @@ function StartGame(props) {
       <div className={styles['start-title']}>
         {props.title}
       </div>
-          {props.startGame && (
-          <div className={styles['btn-container']}>
-            <Link to="/start-game">
-              <button className={styles['game-button']}>
-                {props.left}
-              </button>
-            </Link>
-            <Link to="/create-game">
-              <button className={styles['game-button']}>
-                {props.right}
-              </button>
-            </Link>
-            </div>
-        )}
-        {!props.startGame && (
-            <div className={styles['btn-container']}>
-              <button className={styles['game-button']}>
-                {props.left}
-              </button>
-              <button className={styles['game-button']}>
-                {props.right}
-              </button>
-            </div>
-        )} 
-      </div>
+      {props.home && (
+        <div className={styles['btn-container']}>
+          <Link to='default-guide'>
+            <button className={styles['game-button']}>
+              Default game
+          </button>
+          </Link>
+          <Link to='/custom'>
+            <button className={styles['game-button']}>
+              Custom game
+          </button>
+          </Link>
+        </div>
+      )}
+      {!props.home && (
+        <div className={styles['btn-container']}>
+          <Link to='/choose-game'>
+            <button className={styles['game-button']}>Load existing game</button>
+          </Link>
+          <Link to='/create-game'>
+            <button className={styles['game-button']}>Create new game</button>
+          </Link>
+        </div>
+      )}
+    </div>
 
   )
 }
