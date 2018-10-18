@@ -16,7 +16,7 @@ function StartGame(props) {
           <Link to='default-guide'>
             <button className={styles['game-button']}>
               Default game
-          </button>
+            </button>
           </Link>
           <Link to='/custom'>
             <button className={styles['game-button']}>

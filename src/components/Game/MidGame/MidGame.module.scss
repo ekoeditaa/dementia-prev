@@ -8,6 +8,14 @@ $input-color: #D0C8D0;
     src: local('font/lato/Lato-Regular.ttf');
 }
 
+.midgame-div {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 65px;
+}
+
 .midgame {
     display: flex;
     flex-direction: row;
@@ -32,8 +40,8 @@ $input-color: #D0C8D0;
     border-radius: 30px;
     border: none;
     background-color: $input-color;
-    width: 890px;
-    height: 310px;
+    width: 880px;
+    height: 370px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -60,7 +68,6 @@ $input-color: #D0C8D0;
 }
 
 .image {
-    height: 200px;
     width: 200px;
 }
 
@@ -96,7 +103,7 @@ $input-color: #D0C8D0;
 }
 
 .midgame-btn-yes {
-    width: 440px; 
+    width: 430px; 
     height: 140px;
     border-radius: 20px;
     border: none;
@@ -107,7 +114,7 @@ $input-color: #D0C8D0;
 }
 
 .midgame-btn-no {
-    width: 440px;
+    width: 430px;
     height: 140px;
     padding: 20px;
     border-radius: 20px;
@@ -119,7 +126,7 @@ $input-color: #D0C8D0;
 }
 
 .midgame-btn {
-    width: 440px;
+    width: 430px;
     height: 140px;
     padding: 20px;
     border-radius: 20px;
@@ -131,7 +138,7 @@ $input-color: #D0C8D0;
 }
 
 .midgame-btn-full {
-    width: 100%;
+    width: 880px;
     height: 140px;
     padding: 20px;
     border-radius: 20px;
@@ -143,36 +150,47 @@ $input-color: #D0C8D0;
 }
 
 @media screen and (max-width: 600px) {
+    .midgame-div {
+        padding-top: 30px;
+    }
+
     .midgame-title {
-        font-size: 20px;
+        font-size: 28px;
     }
     
     .midgame-container {
         border-radius: 10px;
         width: 297px;
-        height: 103px;
-        margin-top: 3px;
+        height: 230px;
+        margin-top: 7px;
+    }
+
+    .midgame-card {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
     
     .image {
-        height: 67px;
-        width: 67px;
+        align-self: center;
+        width: 100px;
     }
     
     .midgame-text {
-        font-size: 27px;
+        font-size: 36px;
+        text-align: center;
     }
     
     .progress-bar-container {
         width: 100%;
-        height: 12px;
+        height: 15px;
     }
     
     .progress-bar {
-        width: 60%;
+        width: 100%;
         height: 100%;
         border-radius: 10px;
-        font-size: 8px;
+        font-size: 13px;
     }
     
     .btn-container {
@@ -181,33 +199,33 @@ $input-color: #D0C8D0;
     
     .midgame-btn-yes {
         width: 147px;
-        height: 47px;
+        height: 50px;
         padding: 7px;
         border-radius: 7px;
-        font-size: 20px;
+        font-size: 25px;
     }
     
     .midgame-btn-no {
         width: 147px;
-        height: 47px;
+        height: 50px;
         padding: 7px;
         border-radius: 7px;
-        font-size: 20px;
+        font-size: 26px;
     }
 
     .midgame-btn {
         width: 147px;
-        height: 47px;
+        height: 50px;
         padding: 7px;
         border-radius: 7px;
-        font-size: 20px;
+        font-size: 26px;
     }
 
     .midgame-btn-full {
-        width: 100%;
-        height: 47px;
+        width: 297px;
+        height: 50px;
         padding: 7px;
         border-radius: 7px;
-        font-size: 20px;
+        font-size: 26px;
     }
 }

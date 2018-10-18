@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 
 function MidGame(props) {
   return (
-    <div>
+    <div className={styles['midgame-div']}>
       <Header />
       <div className={styles['midgame']}>
         <div className={styles['midgame-content']}>
@@ -43,11 +43,11 @@ function MidGame(props) {
               </Link>
             </div>) : (
               props.first ? (
-                <Link to='/mid-remember'>
-                  <div className={styles['btn-container']}>
+                <div className={styles['btn-container']}>
+                  <Link to='/mid-remember'>
                     <button className={styles['midgame-btn-full']}>Next</button>
-                  </div>
-                </Link>
+                  </Link>
+                </div>
               ) : (
                   <div className={styles['btn-container']}>
                     <Link to='/remember'>

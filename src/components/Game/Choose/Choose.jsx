@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 
 function Choose() {
     return (
-        <div>
+        <div className={styles['choose-container']}>
             <Header />
             <div className={styles['choose']}>
                 <div>

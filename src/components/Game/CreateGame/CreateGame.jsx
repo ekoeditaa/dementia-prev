@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 
 function CreateGame() {
   return (
-    <div>
+    <div className={styles['create-div']}>
       <Header />
       <div className={styles['create']}>
         <div className={styles['create-container']}>

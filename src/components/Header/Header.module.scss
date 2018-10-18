@@ -19,13 +19,13 @@ $input-color: #D0C8D0;
     justify-content: center;
     border-bottom: 1px solid white;
     font-family: 'Pacifico', cursive;
-    // position: fixed;
-    // top: 0;
+    position: fixed;
+    top: 0;
     min-width: 100%;
 }
 
 @media screen and (max-width: 600px) {
     .header {
-        font-size: 30px;
+        font-size: 40px;
     }
 }

@@ -8,10 +8,18 @@ $input-color: #D0C8D0;
     src: local('font/lato/Lato-Regular.ttf');
 }
 
+.endgame-div {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 65px;
+}
+
 .endgame {
     display: flex;
     flex-direction: row;
-    justify-content: center;;
+    justify-content: center;
 }
 
 .endgame-title {
@@ -33,6 +41,8 @@ $input-color: #D0C8D0;
     font-family: lato;
     color: $main-color;
     font-size: 40px;
+    max-height: 450px;
+    overflow: scroll;
 }
 
 .leaderboard-header {
@@ -100,32 +110,39 @@ $input-color: #D0C8D0;
     background-color: $button-color;
 }
 
-@media screen and (max-width: 600px ) {    
+@media screen and (max-width: 600px ) {  
+    .endgame-div {
+        padding-top: 30px;
+        height: 100%;
+    }
+    
     .endgame-title {
-        font-size: 20px;
+        font-size: 28px;
     }
     
     .endgame-container {
         border-radius: 10px;
-        width: 270px;
+        width: 271px;
         padding: 13px;
         min-height: 70px;
         margin-top: 7px;
         font-size: 13px;
+        max-height: 450px;
+        overflow: scroll;
     }
     
     .leaderboard-header {
-        font-size: 10px;
+        font-size: 18px;
         margin-bottom: 7px;
     }
     
     .leaderboard-entry {
-        font-size: 13px;
+        font-size: 22px;
         margin-bottom: 3px;
     }
     
     .leaderboard-rank {
-        width: 133px;
+        width: 33px;
     }
     
     .leaderboard-name {
@@ -142,8 +159,15 @@ $input-color: #D0C8D0;
     
     .endgame-btn {
         width: 147px;
+        height: 50px;
         padding: 7px;
         border-radius: 7px;
-        font-size: 20px;
+        font-size: 25px;
+    }
+
+    .leaderboard-current {
+        font-size: 22px;
+        margin-bottom: 3px;
+        border-radius: 7px;
     }
 }

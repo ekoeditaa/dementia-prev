@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 
 function Guide(props) {
   return (
-    <div>
+    <div className={styles['guide-div']}>
       <Header />
       <div className={styles['guide']}>
         <div>

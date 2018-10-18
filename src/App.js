@@ -7,7 +7,6 @@ import MidGame from './components/Game/MidGame/MidGame';
 import EndGame from './components/Game/EndGame/EndGame';
 import Choose from './components/Game/Choose/Choose';
 import CreateGame from './components/Game/CreateGame/CreateGame';
-import SaveGame from './components/Game/SaveGame/SaveGame';
 import { Switch, Route, Redirect } from 'react-router-dom';
 
 class App extends Component {

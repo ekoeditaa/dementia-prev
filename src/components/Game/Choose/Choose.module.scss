@@ -8,6 +8,14 @@ $input-color: #D0C8D0;
     src: local('font/lato/Lato-Regular.ttf');
 }
 
+.choose-container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 65px;
+}
+
 .choose {
     display: flex;
     flex-direction: row;
@@ -51,22 +59,33 @@ $input-color: #D0C8D0;
 }
 
 @media screen and (max-width: 600px) {
+    .choose-container {
+        padding-top: 30px;
+    }
+
     .choose-title {
-        font-size: 20px;
+        font-size: 26px;
+    }
+
+    .btn-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        justify-items: center;
     }
     
     .choose-btn {
         border-radius: 7px;
-        width: 161px;
-        height: 76px;
+        width: 250px;
+        height: 110px;
         margin: 3px;
     }
     
     .btn-name {
-        font-size: 27px;
+        font-size: 36px;
     }
     
     .btn-date {
-        font-size: 10px;
+        font-size: 18px;
     }
 }

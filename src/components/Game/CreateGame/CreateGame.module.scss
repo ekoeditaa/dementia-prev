@@ -13,6 +13,14 @@ $input-color: #D0C8D0;
     src: local('font/lato/Lato-Thin.ttf');
 }
 
+.create-div {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 65px;
+}
+
 .create {
     display: flex;
     flex-direction: row;
@@ -72,6 +80,10 @@ $input-color: #D0C8D0;
 }
 
 @media screen and (max-width: 600px) {
+    .creat-div {
+        padding-top: 30px;
+    }
+    
     .create-title {
         font-size: 20px;
     }
