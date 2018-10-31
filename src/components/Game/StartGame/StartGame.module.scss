@@ -9,9 +9,11 @@ $input-color: #D0C8D0;
 }
 
 .start-game {
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding-top: 60px;
 }
 
 .start-title {
@@ -41,15 +43,26 @@ $input-color: #D0C8D0;
 }
 
 @media screen and (max-width: 600px) {
+    .satrt-game {
+        padding-top: 30px;
+    }
+
     .start-title {
-        font-size: 20px;
+        font-size: 26px;
+    }
+
+    .btn-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
     .game-button {
-        height: 125px;
-        width: 155px;
-        font-size: 27px;
-        margin: 3px;
+        height: 145px;
+        width: 220px;
+        font-size: 36px;
+        margin: 8px;
         border-radius: 7px;
     }
 } 

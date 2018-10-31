@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 
 function MidGame(props) {
   return (
-    <div>
+    <div className={styles['midgame-div']}>
       <Header />
       <div className={styles['midgame']}>
         <div className={styles['midgame-content']}>
@@ -18,7 +18,7 @@ function MidGame(props) {
                 <div className={styles['image-container']}>
                   <img
                     className={styles['image']}
-                    src='https://upload.wikimedia.org/wikipedia/commons/8/8d/President_Barack_Obama.jpg' />
+                    src='https://imagesvc.timeincapp.com/v3/mm/image?url=https%3A%2F%2Fimages.hellogiggles.com%2Fuploads%2F2017%2F12%2F11001352%2Fbeyonce-green-dress-e1513009030322.jpg&w=700&c=sc&poi=face&q=85' />
                 </div>
                 <div className={styles['midgame-text']}>
                   {props.name}
@@ -43,11 +43,11 @@ function MidGame(props) {
               </Link>
             </div>) : (
               props.first ? (
-                <Link to='/mid-remember'>
-                  <div className={styles['btn-container']}>
+                <div className={styles['btn-container']}>
+                  <Link to='/mid-remember'>
                     <button className={styles['midgame-btn-full']}>Next</button>
-                  </div>
-                </Link>
+                  </Link>
+                </div>
               ) : (
                   <div className={styles['btn-container']}>
                     <Link to='/remember'>

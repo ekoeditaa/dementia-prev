@@ -8,6 +8,14 @@ $input-color: #D0C8D0;
     src: local('font/lato/Lato-Regular.ttf');
 }
 
+.guide-div {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 65px;
+}
+
 .guide {
     display: flex;
     flex-direction: row;
@@ -44,6 +52,10 @@ $input-color: #D0C8D0;
 }
 
 @media screen and (max-width: 600px) {
+    .guide-div {
+        padding-top: 30px;
+    }
+
     .guide-container {
         width: 270px;
         min-height: 70px;
@@ -53,14 +65,15 @@ $input-color: #D0C8D0;
     }
     
     .guide-text {
-        font-size: 27px;
+        font-size: 36px;
     }
     
     .guide-btn {
         width: 297px;
-        height: 47px;
+        height: 50px;
         border-radius: 7px;
-        font-size: 20px;
+        font-size: 26px;
         margin-top: 7px;
+        padding: 7px;
     }
 }
