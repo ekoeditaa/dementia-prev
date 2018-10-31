@@ -25,8 +25,26 @@ function EndGame() {
             </div>
             <div className={styles['leaderboard-current']}>
               <div className={styles['leaderboard-rank']}>2</div>
+              {/* <input type='textbox'
+                className={styles['endgame-textbox']}
+                placeholder='Insert your name' /> */}
               <div className={styles['leaderboard-name']}>Natassa</div>
               <div className={styles['leaderboard-score']}>90</div>
+            </div>
+            <div className={styles['leaderboard-entry']}>
+              <div className={styles['leaderboard-rank']}>3</div>
+              <div className={styles['leaderboard-name']}>Wan Qi</div>
+              <div className={styles['leaderboard-score']}>80</div>
+            </div>
+            <div className={styles['leaderboard-entry']}>
+              <div className={styles['leaderboard-rank']}>4</div>
+              <div className={styles['leaderboard-name']}>Albert</div>
+              <div className={styles['leaderboard-score']}>80</div>
+            </div>
+            <div className={styles['leaderboard-entry']}>
+              <div className={styles['leaderboard-rank']}>5</div>
+              <div className={styles['leaderboard-name']}>Wang Qian</div>
+              <div className={styles['leaderboard-score']}>70</div>
             </div>
           </div>
           <div className={styles['btn-container']}>

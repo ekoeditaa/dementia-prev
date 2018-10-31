@@ -78,6 +78,8 @@ $input-color: #D0C8D0;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    max-width: 545px;
+    text-align: center;
 }
 
 .progress-bar-container {

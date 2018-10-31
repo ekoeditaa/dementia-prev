@@ -75,6 +75,23 @@ $input-color: #D0C8D0;
     margin-bottom: 10px;
     background-color: #978597;
     border-radius: 20px;
+    ::placeholder {
+        color: #755E75;
+        font-family: lato-thin;
+    }
+}
+
+.endgame-textbox {
+    border-radius: 10px;
+    border: 2px #644A64 solid;
+    font-size: 36px;
+    color: $main-color;
+    background-color: #978597;
+    text-align: left;
+    width: 400px;
+    padding: 3px;
+    margin: 3px;
+    font-family: lato;
 }
 
 .leaderboard-rank {

@@ -53,7 +53,7 @@ $input-color: #D0C8D0;
     }
 }
 
-.create-upload {
+.create-upload-name {
     border-radius: 10px;
     border: 2px $main-color solid;
     background-color: $input-color;
@@ -64,6 +64,40 @@ $input-color: #D0C8D0;
     font-size: 45px;
     padding: 20px;
     margin: 10px;
+}
+
+.create-upload {
+    border-radius: 10px;
+    border: 2px $main-color solid;
+    background-color: $input-color;
+    width: 637.63px;
+    height: 24px;
+    font-family: lato-light;
+    color: $main-color;
+    font-size: 40px;
+    padding: 15px;
+    margin-left: 10px;
+}
+
+.upload-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+}
+
+.upload-image {
+    width: 40px;
+}
+
+.upload-btn {
+    background-color: $button-color;
+    color: #CBC3CB;
+    font-family: lato-light;
+    font-size: 30px;
+    border-radius: 10px;
+    height: 50px;
 }
 
 .create-btn {
